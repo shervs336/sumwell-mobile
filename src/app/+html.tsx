@@ -26,7 +26,8 @@ export default function Root({ children }: PropsWithChildren) {
         <meta property="og:title" content="Sumwell Mobile" />
         <meta property="og:description" content={DESCRIPTION} />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/og.png" />
+        <meta property="og:image" content="https://sumwell-mobile.vercel.app/og.png" />
+        <meta property="og:url" content="https://sumwell-mobile.vercel.app" />
         <meta name="twitter:card" content="summary_large_image" />
         <ScrollViewStyleReset />
         <style dangerouslySetInnerHTML={{ __html: background }} />
