@@ -8,7 +8,11 @@
     "scheme": "sumwell",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "bundleIdentifier": "app.sumwell.mobile"
+      "bundleIdentifier": "app.sumwell.mobile",
+      "supportsTablet": false,
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -55,9 +59,6 @@
       }
     },
     "owner": "sherwin-rhey-condez",
-    "runtimeVersion": {
-      "policy": "sdkVersion"
-    },
     "updates": {
       "url": "https://u.expo.dev/952c21fd-6cda-4b88-a67d-ce0db21d6e1f"
     }
