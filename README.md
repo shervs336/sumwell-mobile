@@ -1,6 +1,6 @@
 # Sumwell Mobile: an Expo companion app
 
-**Web demo:** https://sumwell-mobile.vercel.app · **Phone:** open in Expo Go (see below)
+**Web demo:** https://sumwell-mobile.vercel.app · **Phone:** scan the [Expo Go QR code](#open-on-your-phone-with-expo-go)
 
 The pocket companion to the [Sumwell dashboard](https://sumwell-finance-dashboard.vercel.app). Add a purchase in two taps, keep an eye on your budgets, and see where the month went. Built once with Expo and React Native, it runs on iOS, Android and the web from the same code.
 
@@ -68,10 +68,20 @@ npm run build:web       # static web export into dist/
 ```
 
 ### Open on your phone with Expo Go
-1. Install **Expo Go** from the App Store or Google Play.
-2. Either:
-   - run `npx expo start` on your computer and scan the QR code (same Wi-Fi, or add `--tunnel`), or
-   - publish an update with Expo Update (`npx eas-cli@latest update`) after signing in to your Expo account, and share its link.
+1. Install **Expo Go** (SDK 58) from the App Store or Google Play.
+2. Scan this code with your phone's camera (iOS) or from Expo Go (Android). No computer needs to be running:
+
+   <img src="docs/expo-go-qr.png" alt="QR code that opens Sumwell Mobile in Expo Go" width="180" />
+
+   Or open `exp://u.expo.dev/952c21fd-6cda-4b88-a67d-ce0db21d6e1f/group/618db77f-f2bb-4d53-a38e-f2f0823ea0d4` on the phone.
+
+It's a published update on [Expo](https://expo.dev/accounts/sherwin-rhey-condez/projects/sumwell-mobile), built for Expo Go's SDK 58 runtime (`runtimeVersion.policy: sdkVersion`).
+
+To publish a new version:
+```bash
+npx eas-cli@latest update --branch main --environment production --message "…"
+```
+Each publish gets a new link; update the QR code with it. During development you can also run `npx expo start` and scan its QR code.
 
 ## Project structure
 ```
