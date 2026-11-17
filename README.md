@@ -68,7 +68,7 @@ npm run build:web       # static web export into dist/
 ```
 
 ### Open on your phone with Expo Go
-1. Install **Expo Go** (SDK 58) from the App Store or Google Play.
+1. Install **Expo Go** (SDK 58) from the App Store or Google Play, and sign in to Expo Go (account icon, top right) with any free Expo account. It may not open the project while signed out.
 2. Scan this code with your phone's camera (iOS) or from Expo Go (Android). No computer needs to be running:
 
    <img src="docs/expo-go-qr.png" alt="QR code that opens Sumwell Mobile in Expo Go" width="180" />
