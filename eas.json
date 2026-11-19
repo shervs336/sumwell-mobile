@@ -7,11 +7,13 @@
     "preview": {
       "distribution": "internal",
       "channel": "preview",
+      "env": { "APP_RUNTIME": "build" },
       "android": { "buildType": "apk" }
     },
     "production": {
       "autoIncrement": true,
-      "channel": "production"
+      "channel": "production",
+      "env": { "APP_RUNTIME": "build" }
     }
   },
   "submit": {
